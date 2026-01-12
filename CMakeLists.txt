@@ -18,7 +18,7 @@ find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/CloudIndexed.msg" "msg/CloudSamples.msg" "msg/CloudSources.msg" "msg/GraspConfig.msg" "msg/GraspConfigList.msg"
-  "srv/detect_grasps.srv"
+  "srv/DetectGrasps.srv"
   DEPENDENCIES geometry_msgs std_msgs sensor_msgs
 )
 
