@@ -148,7 +148,7 @@ void GraspDetectionNode::cloud_callback(const sensor_msgs::PointCloud2& msg)
 {
   if (!has_cloud_)
   {
-    delete cloud_camera_;
+    // delete cloud_camera_;
     cloud_camera_ = NULL;
 
     Eigen::Matrix3Xd view_points(3,1);
@@ -247,7 +247,7 @@ void GraspDetectionNode::samples_callback(const gpd_ros::SamplesMsg& msg)
 void GraspDetectionNode::initCloudCamera(const gpd_ros::CloudSources& msg)
 {
   // clean up
-  delete cloud_camera_;
+  // delete cloud_camera_;
   cloud_camera_ = NULL;
 
   // Set view points.
